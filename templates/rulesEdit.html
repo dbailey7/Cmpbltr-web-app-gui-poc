@@ -1,0 +1,64 @@
+<h1>Rule Details</h1>
+<a class="backButton" href="/rules/all">Back</a>
+<hr />
+
+<h2>Edit Your Rule Details</h2>
+
+<div class="formWrapper">
+  <form id="rulesEdit1" action="/api/rules" method="PUT">
+    <input type="hidden" name="_method" value="PUT"/>
+    <div class="formError"></div>
+    <div class="formSuccess">Your Rule Changes Have Been Saved</div>
+    <input class="hiddenIdInput"  type="hidden" name="uid" />
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Rule ID</div>
+      <input class="disabled displayIdInput" type="text" name="displayId" disabled />
+    </div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Email</div>
+      <input class="emailInput" type="text" name="email" placeholder="jb@gmail.com" />
+    </div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Address</div>
+      <input class="addressInput" type="text" name="address" placeholder="2122 Boogy Woogy Avenue" />
+    </div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Phone Number</div>
+      <input class="phoneInput" type="text" name="phone" placeholder="2152345789" />
+    </div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Rule Types ...)</div>
+      <div class="checkboxGroup">
+        <input type="checkbox" class="ruleTypesInput multiselect strval" name="ruleTypes" value="attribution">attribution</input>
+        <input type="checkbox" class="ruleTypesInput multiselect strval" name="ruleTypes" value="aggregation">aggregation</input>
+        <input type="checkbox" class="ruleTypesInput multiselect strval" name="ruleTypes" value="rollup">rollup</input>
+        <input type="checkbox" class="ruleTypesInput multiselect strval" name="ruleTypes" value="distribution">distribution</input>
+        <input type="checkbox" class="ruleTypesInput multiselect strval" name="ruleTypes" value="calculation">calculation</input>
+        <input type="checkbox" class="ruleTypesInput multiselect strval" name="ruleTypes" value="custom">custom</input>
+      </div>
+    </div>
+
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Save Rule Changes</button>
+    </div>
+  </form>
+</div>
+
+<hr />
+<h2>Delete The Rule</h2>
+<div class="formWrapper">
+  <form id="rulesEdit2" action="/api/rules" method="DELETE">
+    <input type="hidden" name="_method" value="DELETE"/>
+    <div class="formError"></div>
+    <div class="warning">Warning: This action cannot be undone. Don't click this button unless you really want to delete your Compobulator rule!</div>
+    <input class="hiddenIdInput" type="hidden" name="uid" />
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta red">Delete Rule</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,37 @@
+<h1>Create A New Compobulator Rule</h1>
+<h2>Then build up your rule!</h2>
+<a class="backButton" href="/rules/all">Back</a>
+<hr />
+
+<div class="formWrapper">
+  <form id="rulesCreate" action="/api/rules" method="POST">
+    <div class="formError"></div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Email</div>
+      <input type = "text" name="email" placeholder = "Your Email"/>
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Address</div>
+      <input type = "text" name="address" placeholder = "Your Address"/>
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Phone Number</div>
+      <input type = "text" name="phone" placeholder = "Your Phone Number"/>
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel"><br><h2>Select Your Rule Types ...</h2></div>
+      <div class="checkboxGroup">
+        <input type="checkbox" class="ruleTypesInput multiselect strval" name="ruleTypes" value="attribution">attribution</input>
+        <input type="checkbox" class="ruleTypesInput multiselect strval" name="ruleTypes" value="aggregation">aggregation</input>
+        <input type="checkbox" class="ruleTypesInput multiselect strval" name="ruleTypes" value="rollup">rollup</input>
+        <input type="checkbox" class="ruleTypesInput multiselect strval" name="ruleTypes" value="distribution">distribution</input>
+        <input type="checkbox" class="ruleTypesInput multiselect strval" name="ruleTypes" value="calculation">calculation</input>
+        <input type="checkbox" class="ruleTypesInput multiselect strval" name="ruleTypes" value="custom">custom</input>
+      </div>
+    </div>
+
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Create Your Rule</button>
+    </div>
+  </form>
+</div>
