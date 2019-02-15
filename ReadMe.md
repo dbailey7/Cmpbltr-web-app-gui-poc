@@ -8,8 +8,13 @@ a multi-select checkbox.
 
 Obviously you need to have node installed, as well.
 
-Ping me if youhave any questions that are not answered by just "following your nose" through the above.
+Ping me if you have any questions that are not answered by just "following your nose" through the above.
 
 Cheers,
 
 David
+
+
+P.S. If you encounter a string beginning with "YOUR-", that means you must replace it with your own 
+values, but only if you want to use the Stripe API (https://stripe.com/) and play around with its 
+online payment processing modules.
