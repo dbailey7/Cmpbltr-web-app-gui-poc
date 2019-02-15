@@ -13,9 +13,9 @@ Ping me if you have any questions that are not answered by just "following your 
 Cheers,
 
 David
-
-
-
+.
+.
+.
 P.S. If you encounter a string beginning with "YOUR-", that means you must replace it with your own 
 values, but only if you want to use the Stripe API (https://stripe.com/) and play around with its 
 online payment processing modules.
